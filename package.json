@@ -1,5 +1,5 @@
 {
-  "name": "SevenCore",
+  "name": "Sevencore",
   "description": "number7 Library",
   "version": "0.1.39",
   "author": {
@@ -27,7 +27,7 @@
   "main": "bitcore.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/number7team/SevenCore.git"
+    "url": "https://github.com/number7team/Sevencore.git"
   },
   "scripts": {
     "install": "node-gyp rebuild",

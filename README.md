@@ -1,4 +1,4 @@
-SevenCore
+Sevencore
 =======
 
 [![Build Status](https://travis-ci.org/bitpay/bitcore.svg?branch=master)](https://travis-ci.org/bitpay/bitcore)
@@ -6,7 +6,7 @@ SevenCore
 
 A pure, powerful core for your number7 project.
 
-SevenCore is a complete, native interface to the number7 network, and provides the core functionality needed to develop
+Sevencore is a complete, native interface to the number7 network, and provides the core functionality needed to develop
 apps for number7.
 
 #Principles
@@ -15,24 +15,24 @@ number7 is a powerful new peer-to-peer platform for the next generation of finan
 The decentralized nature of the number7 network allows for highly resilient number7 infrastructure, and the developer
 community needs reliable, open-source tools to implement number7 apps and services.
 
-**SevenCore unchains developers from fallible, centralized APIs, and provides the tools to interact with the real number7 network.**
+**Sevencore unchains developers from fallible, centralized APIs, and provides the tools to interact with the real number7 network.**
 
 #Get Started
 
-SevenCore runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
+Sevencore runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
 
 ```
-npm install SevenCore
+npm install Sevencore
 ```
 
 It is a collection of objects useful to number7 applications; class-like idioms are enabled via[Soop](https://github.com/bitpay/soop).
 In most cases, a developer will require the object's class directly. For instance:
 
 ```javascript
-var SevenCore = require('SevenCore');
-var Address = SevenCore.Address;
-var Transaction = SevenCore.Transaction;
-var PeerManager = SevenCore.PeerManager;
+var Sevencore = require('Sevencore');
+var Address = Sevencore.Address;
+var Transaction = Sevencore.Transaction;
+var PeerManager = Sevencore.PeerManager;
 ```
 
 #Examples
@@ -52,24 +52,24 @@ Javascript files available at [/examples](/examples) folder.
 
 Please use at your own risk.
 
-SevenCore is still under heavy development and not quite ready for "drop-in" production use. If you find a security issue,
+Sevencore is still under heavy development and not quite ready for "drop-in" production use. If you find a security issue,
 please email pembo210@gmail
 
 #Contributing
 
-SevenCore needs some developer love. Please send pull requests for bug fixes, code optimization, and ideas for improvement.
+Sevencore needs some developer love. Please send pull requests for bug fixes, code optimization, and ideas for improvement.
 
 #Browser support
 
 ## Building the browser bundle
 
-To build SevenCore full bundle for the browser (this is automatically executed after you run `npm install`):
+To build Sevencore full bundle for the browser (this is automatically executed after you run `npm install`):
 
 ```
 node browser/build.js -a
 ```
 
-This will generate a `browser/bundle.js` file which you can include in your HTML to use SevenCore in the browser.
+This will generate a `browser/bundle.js` file which you can include in your HTML to use Sevencore in the browser.
 
 ##Example browser usage
 
@@ -81,8 +81,8 @@ From example/simple.html
   <body>
     <script src="../browser/bundle.js"></script>
     <script>
-      var SevenCore = require('SevenCore');
-      var Address = SevenCore.Address;
+      var Sevencore = require('Sevencore');
+      var Address = Sevencore.Address;
       var a = new Address('sgrHPw4aEPos8YJDNfefsUSjPYWc5fzpLE');
       console.log('sgrHPw4aEPos8YJDNfefsUSjPYWc5fzpLE is valid? '+a.isValid());
     </script>
@@ -94,26 +94,26 @@ You can check a more complex usage example at examples/example.html.
 
 ## Generating a customized browser bundle
 
-To build the main SevenCore bundle, run:
+To build the main Sevencore bundle, run:
 
 ```
 node browser/build.js -m
 ```
 
-To build all features into the SevenCore bundle (which will lead to a large file size), run:
+To build all features into the Sevencore bundle (which will lead to a large file size), run:
 
 ```
 node browser/build.js -a
 ```
 
-To generate a customized SevenCore bundle, you can specify which submodules you want to include in it with the -s option:
+To generate a customized Sevencore bundle, you can specify which submodules you want to include in it with the -s option:
 
 ```
 node browser/build.js -s Transaction,Address
 ```
 
 This will generate a `browser/bundle.js` containing only the Transaction and Address class, with all their dependencies.
-Use this option if you are not using the whole SevenCore library, to optimize the bundle size, script loading time, and general resource usage.
+Use this option if you are not using the whole Sevencore library, to optimize the bundle size, script loading time, and general resource usage.
 
 ## Tests
 
