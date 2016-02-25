@@ -6,10 +6,10 @@ var hex = function(hex) {
 
 exports.livenet = {
   name: 'livenet',
-  magic: hex('FBC0B6DB'),
-  addressVersion: 0x07,
-  privKeyVersion: 0x36,
-  P2SHVersion: 5,
+  magic: hex('37ac4869'), // 0x68 0x7a 0xf0 0x1e 
+  addressVersion: 0x0f, // address prefix 7
+  privKeyVersion: 0x36, //private key prefix
+  P2SHVersion: 5, // multisig prefix
   hkeyPublicVersion: 0x0488c42e,
   hkeyPrivateVersion: 0x0488e1f4,
   genesisBlock: {
@@ -19,20 +19,20 @@ exports.livenet = {
     nonce: 1734121,
     version: 0,
     prev_hash: buffertools.fill(new Buffer(32), 0),
-    timestamp: 1317972665,
-    bits: 1e0ffff0,
+    timestamp: 1454799127,
+    bits: '1e0ffff0',
   },
   dnsSeeds: [
-    '127.0.0.1',
     '52.34.40.255',
-
+    '52.33.110.112',
+  
   ],
   defaultClientPort: 6094
 };
 
 exports.mainnet = exports.livenet;
 
-exports.testnet = {  //not setup for litecoin yet
+exports.testnet = {  //not setup for Number7 yet
   name: 'testnet',
   magic: hex('0b110907'),
   addressVersion: 0x6f,
